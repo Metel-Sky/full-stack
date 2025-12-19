@@ -1,32 +1,65 @@
-/* .main_title {
-  border: 4px solid black;
-} */
 
-#title_h1 {
-  color: blue;
-}
-/* звернення до типу */
-[type] {
-  text-decoration: underline;
+:root {
+  --color-brand-light:#819b57;
+  --color-brand-dark: #465929;
+  --primary-dark: #31261A;
+  --primary-light: #FAF4EA;
 }
 
-/* звернення до класу */
+
+
+
+
+/* Base */
+body{
+  color: var(--primary-dark);
+}
+
+ul{
+  list-style-type: none;
+}
+
+/* Button */
 .button {
-  color: #faf4ea;
-  background-color: #819b57;
-  border: 4px solid #819b57;
+  color: var(--primary-light);
+  background-color: var(--color-brand-light);
+  border: 2px solid var(--color-brand-light);
   border-radius: 8px;
   cursor: pointer;
 }
 
 .button:hover {
-  color: #465929;
+  color: var(--color-brand-dark);
   background-color: transparent;
-  border: 4px solid #819b57;
+  border: 2px solid var(--color-brand-light);
   cursor: pointer;
 }
 
-.button:focus {
-  color: green;
-  background-color: #1a6335;
+/* Links */
+.link {
+  color: var(--primary-dark);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--color-brand-light);
+}
+
+/* Hero section */
+.hero-title{
+  color: var(--primary-dark);
+}
+
+.hero-title .accent{
+  color: var(--color-brand-light);
+}
+
+/* Advantage section */
+.adventages-list{
+  background-color: var(--color-brand-light);
+  color: var(--primary-light);
+}
+
+.section-title .accent{
+  color: var(--color-brand-dark);
 }
