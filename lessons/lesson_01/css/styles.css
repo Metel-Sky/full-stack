@@ -1,21 +1,16 @@
-
 :root {
-  --color-brand-light:#819b57;
+  --color-brand-light: #819b57;
   --color-brand-dark: #465929;
-  --primary-dark: #31261A;
-  --primary-light: #FAF4EA;
+  --primary-dark: #31261a;
+  --primary-light: #faf4ea;
 }
 
-
-
-
-
 /* Base */
-body{
+body {
   color: var(--primary-dark);
 }
 
-ul{
+ul {
   list-style-type: none;
 }
 
@@ -46,20 +41,21 @@ ul{
 }
 
 /* Hero section */
-.hero-title{
+.hero-title {
   color: var(--primary-dark);
+  font-family: Poppins, sans-serif;
 }
 
-.hero-title .accent{
+.hero-title .accent {
   color: var(--color-brand-light);
 }
 
 /* Advantage section */
-.adventages-list{
+.adventages-list {
   background-color: var(--color-brand-light);
   color: var(--primary-light);
 }
 
-.section-title .accent{
+.section-title .accent {
   color: var(--color-brand-dark);
 }
