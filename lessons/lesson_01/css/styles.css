@@ -38,8 +38,8 @@
   src: url('../fonts/poppins-v24-latin-900.woff2') format('woff2');
 }
 
-:root {
-  --color-brand-light: #819b57;
+:root {/* CSS змінні */
+  --color-brand-light: #819b57;/* світлий брендований колір */
   --color-brand-dark: #465929;
   --primary-dark: #31261a;
   --primary-light: #faf4ea;
@@ -51,10 +51,11 @@
   box-sizing: border-box; /* щоб padding і border не збільшували розмір елемента */
 }
 body {
-  color: var(--primary-dark);
-  font-family: Poppins, sans-serif;
-  font-size: 18px;
-  font-weight: 400;
+  color: var(--primary-dark);/* стандартний колір тексту для всього сайту */
+  font-family: Poppins, sans-serif;/* стандартний шрифт для всього сайту */
+  font-size: 18px;/* стандартний розмір шрифту для тексту */
+  font-weight: 400;/* стандартний вагу шрифту для тексту */
+  margin: 0;/* прибирає стандартні відступи браузера */
   line-height: 1.5; /* завжди використовуєм коефіціент 1.5 для гарної читабельності тексту */
 }
 
@@ -65,12 +66,14 @@ h4,
 h5,
 h6,
 p {
-  margin-top: 0;
+  margin-top: 0;/* прибирає стандартні відступи браузера */
 }
 
-.container{
-  width: 1240px;
-  margin: 0 auto;
+.container{/* обгортка для контенту */
+  width: 100%;/* ширина контейнера на 100% */
+  max-width: 1288px;/* максимальна ширина контейнера */
+  margin: 0 auto;/* центрує контейнер горизонтально */
+  padding: 0 24px;/* відступи зліва і справа всередині контейнера */
 }
 
 address {
@@ -78,14 +81,14 @@ address {
 }
 
 ul {
-  list-style-type: none;
+  list-style-type: none;/* прибирає маркери у списку */
 }
 
 .section {
-  padding: 48px 0;
+  padding: 48px 0;/* відступи зверху і знизу для всіх секцій */
 }
 
-.visually-hiden {
+.visually-hiden {/* приховує елемент для користувача, але залишає його доступним для скрінрідерів */
   position: absolute;
   left: -10000px;
   top: auto;
@@ -96,6 +99,7 @@ ul {
 
 /* Button */
 .button {
+  padding: 16px 32px;
   color: var(--primary-light);
   background-color: var(--color-brand-light);
   border: 2px solid var(--color-brand-light);
