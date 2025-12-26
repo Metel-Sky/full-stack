@@ -68,6 +68,11 @@ p {
   margin-top: 0;
 }
 
+.container{
+  width: 1240px;
+  margin: 0 auto;
+}
+
 address {
   font-style: normal; /* прибирає курсив для елемента address */
 }
