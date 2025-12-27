@@ -38,8 +38,9 @@
   src: url('../fonts/poppins-v24-latin-900.woff2') format('woff2');
 }
 
-:root {/* CSS змінні */
-  --color-brand-light: #819b57;/* світлий брендований колір */
+:root {
+  /* CSS змінні */
+  --color-brand-light: #819b57; /* світлий брендований колір */
   --color-brand-dark: #465929;
   --primary-dark: #31261a;
   --primary-light: #faf4ea;
@@ -52,11 +53,11 @@
 }
 
 body {
-  color: var(--primary-dark);/* стандартний колір тексту для всього сайту */
-  font-family: Poppins, sans-serif;/* стандартний шрифт для всього сайту */
-  font-size: 18px;/* стандартний розмір шрифту для тексту */
-  font-weight: 400;/* стандартний вагу шрифту для тексту */
-  margin: 0;/* прибирає стандартні відступи браузера */
+  color: var(--primary-dark); /* стандартний колір тексту для всього сайту */
+  font-family: Poppins, sans-serif; /* стандартний шрифт для всього сайту */
+  font-size: 18px; /* стандартний розмір шрифту для тексту */
+  font-weight: 400; /* стандартний вагу шрифту для тексту */
+  margin: 0; /* прибирає стандартні відступи браузера */
   line-height: 1.5; /* завжди використовуєм коефіціент 1.5 для гарної читабельності тексту */
 }
 
@@ -67,14 +68,15 @@ h4,
 h5,
 h6,
 p {
-  margin-top: 0;/* прибирає стандартні відступи браузера */
+  margin-top: 0; /* прибирає стандартні відступи браузера */
 }
 
-.container{/* обгортка для контенту */
-  width: 100%;/* ширина контейнера на 100% */
-  max-width: 1288px;/* максимальна ширина контейнера */
-  margin: 0 auto;/* центрує контейнер горизонтально */
-  padding: 0 24px;/* відступи зліва і справа всередині контейнера */
+.container {
+  /* обгортка для контенту */
+  width: 100%; /* ширина контейнера на 100% */
+  max-width: 1288px; /* максимальна ширина контейнера */
+  margin: 0 auto; /* центрує контейнер горизонтально */
+  padding: 0 24px; /* відступи зліва і справа всередині контейнера */
 }
 
 address {
@@ -82,14 +84,17 @@ address {
 }
 
 ul {
-  list-style-type: none;/* прибирає маркери у списку */
+  margin: 0;
+  padding: 0;
+  list-style-type: none; /* прибирає маркери у списку */
 }
 
 .section {
-  padding: 48px 0;/* відступи зверху і знизу для всіх секцій */
+  padding: 48px 0; /* відступи зверху і знизу для всіх секцій */
 }
 
-.visually-hiden {/* приховує елемент для користувача, але залишає його доступним для скрінрідерів */
+.visually-hiden {
+  /* приховує елемент для користувача, але залишає його доступним для скрінрідерів */
   position: absolute;
   left: -10000px;
   top: auto;
@@ -124,16 +129,33 @@ ul {
 
 .link:hover {
   color: var(--color-brand-light);
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 
 /* Header */
-
-.header-container{
-  
+.header {
+  background-color: rgb(200, 195, 195);
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
 
+.header-nav {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
+}
 
 /* Hero section */
 .hero-section {
@@ -157,8 +179,11 @@ ul {
 }
 
 /* Advantage section */
-.adventages-list {
+.adventages-section {
   background-color: var(--color-brand-light);
+}
+
+.adventages-list {
   color: var(--primary-light);
 }
 
@@ -194,16 +219,15 @@ ul {
 }
 
 /* Chefs section */
-.chef-title{
+.chef-title {
   font-size: 40px;
   font-weight: 600;
   margin-bottom: 16px;
-  
-}
-.chefs-title{
-  margin-bottom: 80px;
 }
 
+.chefs-title {
+  margin-bottom: 80px;
+}
 
 /* Formats section */
 .section-title.center {
@@ -219,12 +243,12 @@ ul {
   font-size: 14px;
   font-weight: 300;
 }
-.formats-title{
+.formats-title {
   margin-bottom: 80px;
 }
 
 /* Contacts section */
-.contact-title{
+.contact-title {
   margin-bottom: 16px;
 }
 
