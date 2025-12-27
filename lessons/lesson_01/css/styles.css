@@ -180,16 +180,20 @@ ul {
 
 /* Advantage section */
 .adventages-section {
+  padding: 16px 0px;
   background-color: var(--color-brand-light);
 }
 
 .adventages-list {
-  color: var(--primary-light);
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .adventages-item {
   font-weight: 300;
   font-size: 20px;
+  color: var(--primary-light);
 }
 
 .section-title {
@@ -206,6 +210,12 @@ ul {
   padding-top: 96px;
 }
 
+.tradition-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
 .tradition-title {
   margin-bottom: 42px;
 }
@@ -214,8 +224,16 @@ ul {
   font-weight: 600;
 }
 
+.tradition-content{
+  max-width: 710px;
+}
+
 .tradition-text .uppercase {
   text-transform: uppercase;
+}
+
+.tradition-text.limited {
+  max-width: 340px;
 }
 
 /* Chefs section */
