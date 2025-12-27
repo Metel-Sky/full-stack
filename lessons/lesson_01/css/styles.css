@@ -50,6 +50,7 @@
 * {
   box-sizing: border-box; /* щоб padding і border не збільшували розмір елемента */
 }
+
 body {
   color: var(--primary-dark);/* стандартний колір тексту для всього сайту */
   font-family: Poppins, sans-serif;/* стандартний шрифт для всього сайту */
@@ -125,6 +126,14 @@ ul {
   color: var(--color-brand-light);
   font-weight: 600;
 }
+
+/* Header */
+
+.header-container{
+  
+}
+
+
 
 /* Hero section */
 .hero-section {
