@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;/* вирівнює елементи по горизонталі по центру */
+} 
+
+.item{
+    flex-basis: 100px;
+    height: 100px;
+    background-color: blanchedalmond;
+    padding: 10px;
+    border: 6px solid coral;
+    margin: 10px;
+}
+
+.item:nth-child(2){
+    flex-grow: 1;
+}
