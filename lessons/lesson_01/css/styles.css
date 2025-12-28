@@ -160,6 +160,11 @@ ul {
 /* Hero section */
 .hero-section {
   padding: 272px 0;
+  background-image: url('../img/couple-in-bakery.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  /* background-attachment: fixed; */
 }
 .hero-title {
   margin-bottom: 0;
@@ -250,6 +255,25 @@ ul {
 /* Formats section */
 .section-title.center {
   text-align: center;
+}
+
+.format-card{
+  padding: 24px;
+  border: 1px solid lightcoral;
+  border-radius: 16px;
+}
+
+.formats-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  
+}
+
+.formats-item{
+  flex-basis: calc((100%-40px) /3);
+  max-width: 349px
+  ;
 }
 
 .format-title {
