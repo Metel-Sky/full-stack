@@ -42,8 +42,10 @@
   /* CSS змінні */
   --color-brand-light: #819b57; /* світлий брендований колір */
   --color-brand-dark: #465929;
+  --color-brand-secondary: #a18268;
   --primary-dark: #31261a;
-  --primary-light: #faf4ea;
+  --primary-normal: #faf4ea;
+  --color-light: #cfcfbc;
 }
 
 /* Base */
@@ -53,6 +55,7 @@
 }
 
 body {
+  background-color: var(--primary-normal);
   color: var(--primary-dark); /* стандартний колір тексту для всього сайту */
   font-family: Poppins, sans-serif; /* стандартний шрифт для всього сайту */
   font-size: 18px; /* стандартний розмір шрифту для тексту */
@@ -106,7 +109,7 @@ ul {
 /* Button */
 .button {
   padding: 16px 32px;
-  color: var(--primary-light);
+  color: var(--primary-normal);
   background-color: var(--color-brand-light);
   border: 2px solid var(--color-brand-light);
   border-radius: 8px;
@@ -123,7 +126,7 @@ ul {
 
 /* Links */
 .link {
-  color: var(--primary-light);
+  color: var(--primary-normal);
   text-decoration: none;
 }
 
@@ -168,7 +171,7 @@ ul {
 }
 .hero-title {
   margin-bottom: 0;
-  color: var(--primary-light);
+  color: var(--primary-normal);
   text-align: center;
   font-size: 128px;
   font-weight: 900;
@@ -198,7 +201,7 @@ ul {
 .adventages-item {
   font-weight: 300;
   font-size: 20px;
-  color: var(--primary-light);
+  color: var(--primary-normal);
 }
 
 .section-title {
@@ -210,6 +213,11 @@ ul {
 .section-title .accent {
   color: var(--color-brand-dark);
 }
+
+.section-title.centered {
+  text-align: center;
+}
+
 /* Traditions section */
 .traditions-section {
   padding-top: 96px;
@@ -248,8 +256,23 @@ ul {
   margin-bottom: 16px;
 }
 
+.chef-photo {
+  border-radius: 4px 4px 4px 200px;
+  box-shadow: -16px 16px 0 0 #faf4ea,
+    -16px 16px 0 2px var(--color-brand-secondary);
+}
+
+.chefs-title::before,
+.chefs-title::after {
+  display: block;
+  width: 352px;
+  border: 2px solid var(--color-light);
+  content: ''; /* обов"язковий елемент для декору */
+}
+
 .chefs-title {
-  margin-bottom: 80px;
+  margin: 0 auto 80px;
+  max-width: 520px;
 }
 
 /* Formats section */
@@ -259,7 +282,7 @@ ul {
 
 .format-card {
   /* box-shadow: 1px 1px 4px 2px violet; /*так задається тінь */
-  padding: 24px ;
+  padding: 24px;
   width: 350px;
   height: 444px;
   background-image: url('../img/PURI_1.jpg');
@@ -276,7 +299,7 @@ ul {
 .formats-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;/**/
+  gap: 20px; /**/
 }
 
 .formats-item {
@@ -304,7 +327,7 @@ ul {
 
 /* Footer */
 .adress-link {
-  color: var(--primary-light);
+  color: var(--primary-normal);
   font-weight: 400;
   font-size: 18px;
   text-decoration: none;
