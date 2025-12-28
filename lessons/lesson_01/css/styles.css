@@ -229,7 +229,7 @@ ul {
   font-weight: 600;
 }
 
-.tradition-content{
+.tradition-content {
   max-width: 710px;
 }
 
@@ -257,23 +257,31 @@ ul {
   text-align: center;
 }
 
-.format-card{
-  padding: 24px;
+.format-card {
+  /* box-shadow: 1px 1px 4px 2px violet; /*так задається тінь */
+  padding: 24px ;
+  width: 350px;
+  height: 444px;
+  background-image: url('../img/PURI_1.jpg');
   border: 1px solid lightcoral;
   border-radius: 16px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0) 55.21%,
+    rgba(49, 38, 26, 0.71) 72.92%,
+    var(--primary-dark) 100%
+  );
 }
 
-.formats-list{
+.formats-list {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  
 }
 
-.formats-item{
-  flex-basis: calc((100%-40px) /3);
-  max-width: 349px
-  ;
+.formats-item {
+  flex-basis: calc((100%-40px) / 3);
+  max-width: 349px;
 }
 
 .format-title {
@@ -310,6 +318,14 @@ ul {
   font-weight: 400;
   font-size: 14px;
   color: #a18268;
+}
+
+.footer {
+  background-image: url('../img/footer_bg_img.png');
+  background-color: var(--primary-dark);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /* .tradition-text {
