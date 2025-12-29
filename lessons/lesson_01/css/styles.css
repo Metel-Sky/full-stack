@@ -74,6 +74,7 @@ p {
   margin-top: 0; /* прибирає стандартні відступи браузера */
 }
 
+
 .container {
   /* обгортка для контенту */
   width: 100%; /* ширина контейнера на 100% */
@@ -320,6 +321,28 @@ ul {
   margin-bottom: 80px;
 }
 
+/* Carousel */
+.carousel-button{
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--primary-dark) ;
+  cursor: pointer;
+  fill: var(--primary-dark);
+}
+
+.carousel-button:hover{
+background-color: var(--primary-dark);
+fill: var(--color-light);
+}
+
+
+
 /* Contacts section */
 .contact-title {
   margin-bottom: 16px;
@@ -335,6 +358,14 @@ ul {
 
 .adress-link:hover {
   color: var(--color-brand-light);
+}
+
+.adress-icon{
+  fill: var(--primary-normal); /* колір іконок задвється через fill */
+}
+
+.adress-icon:hover{
+  fill: var(--color-brand-light); /* колір іконок задвється через fill */
 }
 
 .adress-copiright {

@@ -4,90 +4,31 @@
     {
       "icon": {
         "paths": [
-          "M8.939 512c0 277.833 225.228 503.061 503.061 503.061s503.061-225.228 503.061-503.061c0-277.833-225.228-503.061-503.061-503.061s-503.061 225.228-503.061 503.061z",
-          "M737.911 495.544c9.088 9.088 9.088 23.824 0 32.912l-148.108 148.108c-9.088 9.088-23.822 9.088-32.912 0-9.088-9.090-9.088-23.824 0-32.912l131.651-131.651-131.651-131.651c-9.088-9.088-9.088-23.822 0-32.912 9.090-9.088 23.824-9.088 32.912 0l148.108 148.108zM721.455 535.273h-390.095v-46.545h390.095v46.545z"
+          "M19.982 551.006c-26.66-26.66-26.66-69.884-0-96.544l434.447-434.446c26.659-26.66 69.884-26.66 96.543 0s26.659 69.884 0 96.543l-386.174 386.175 386.174 386.174c26.66 26.658 26.66 69.885 0 96.543-26.659 26.665-69.884 26.665-96.543 0l-434.447-434.444zM1212.532 571h-1144.278v-136.533h1144.278v136.533z"
         ],
         "attrs": [
-          {
-            "opacity": 0.7,
-            "strokeLinejoin": "miter",
-            "strokeLinecap": "butt",
-            "strokeMiterlimit": "4",
-            "strokeWidth": 17.878737454545455
-          },
           {}
         ],
-        "isMulticolor": true,
-        "isMulticolor2": true,
-        "grid": 0,
-        "tags": [
-          "Arrow (1)"
-        ],
-        "colorPermutations": {}
-      },
-      "attrs": [
-        {
-          "opacity": 0.7,
-          "strokeLinejoin": "miter",
-          "strokeLinecap": "butt",
-          "strokeMiterlimit": "4",
-          "strokeWidth": 17.878737454545455
-        },
-        {}
-      ],
-      "properties": {
-        "order": 5,
-        "id": 3,
-        "name": "Arrow-1",
-        "prevSize": 32
-      },
-      "setIdx": 0,
-      "setId": 2,
-      "iconIdx": 0
-    },
-    {
-      "icon": {
-        "paths": [
-          "M8.939 512c0 277.833 225.228 503.061 503.061 503.061s503.061-225.228 503.061-503.061c0-277.833-225.228-503.061-503.061-503.061s-503.061 225.228-503.061 503.061z",
-          "M314.903 528.456c-9.088-9.088-9.088-23.824 0-32.912l148.105-148.108c9.090-9.088 23.824-9.088 32.915 0 9.088 9.090 9.088 23.824 0 32.912l-131.651 131.651 131.651 131.651c9.088 9.088 9.088 23.822 0 32.912-9.090 9.088-23.824 9.088-32.915 0l-148.105-148.108zM721.455 535.273h-390.095v-46.545h390.095v46.545z"
-        ],
-        "attrs": [
-          {
-            "opacity": 0.7,
-            "strokeLinejoin": "miter",
-            "strokeLinecap": "butt",
-            "strokeMiterlimit": "4",
-            "strokeWidth": 17.878737454545455
-          },
-          {}
-        ],
-        "isMulticolor": true,
-        "isMulticolor2": true,
+        "width": 1229,
+        "isMulticolor": false,
+        "isMulticolor2": false,
         "grid": 0,
         "tags": [
           "Arrow"
-        ],
-        "colorPermutations": {}
+        ]
       },
       "attrs": [
-        {
-          "opacity": 0.7,
-          "strokeLinejoin": "miter",
-          "strokeLinecap": "butt",
-          "strokeMiterlimit": "4",
-          "strokeWidth": 17.878737454545455
-        },
         {}
       ],
       "properties": {
-        "order": 4,
-        "id": 2,
+        "order": 6,
+        "id": 0,
         "name": "Arrow",
         "prevSize": 32
       },
       "setIdx": 0,
-      "setId": 2,
-      "iconIdx": 1
+      "setId": 3,
+      "iconIdx": 0
     },
     {
       "icon": {
@@ -99,18 +40,18 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "facebook_logo_icon_147136 1"
+          "facebook"
         ],
         "colorPermutations": {}
       },
       "attrs": [],
       "properties": {
-        "order": 3,
+        "order": 7,
         "id": 1,
-        "name": "facebook_logo_icon_147136-1",
+        "name": "facebook",
         "prevSize": 32
       },
-      "setIdx": 0,
+      "setIdx": 1,
       "setId": 2,
       "iconIdx": 2
     },
@@ -126,18 +67,18 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "instagram_logo_icon_147122 1"
+          "instagram"
         ],
         "colorPermutations": {}
       },
       "attrs": [],
       "properties": {
-        "order": 2,
+        "order": 8,
         "id": 0,
-        "name": "instagram_logo_icon_147122-1",
+        "name": "instagram",
         "prevSize": 32
       },
-      "setIdx": 0,
+      "setIdx": 1,
       "setId": 2,
       "iconIdx": 3
     }
@@ -174,6 +115,7 @@
     },
     "historySize": 50,
     "showCodes": true,
-    "gridSize": 16
+    "gridSize": 16,
+    "showGrid": false
   }
 }
