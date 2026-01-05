@@ -295,6 +295,12 @@ ul {
 }
 
 /* Formats section */
+
+.formats-container{
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
 .section-title.center {
   text-align: center;
 }
@@ -343,6 +349,7 @@ ul {
 .carousel-button {
   padding: 0;
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
   width: 44px;
