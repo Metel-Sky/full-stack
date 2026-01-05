@@ -74,7 +74,6 @@ p {
   margin-top: 0; /* прибирає стандартні відступи браузера */
 }
 
-
 .container {
   /* обгортка для контенту */
   width: 100%; /* ширина контейнера на 100% */
@@ -129,6 +128,10 @@ ul {
 .link {
   color: var(--primary-normal);
   text-decoration: none;
+}
+
+.header-menu li:first-child .link {
+  color: var(--color-brand-light);
 }
 
 .link:hover {
@@ -251,6 +254,7 @@ ul {
 }
 
 /* Chefs section */
+
 .chef-title {
   font-size: 40px;
   font-weight: 600;
@@ -269,6 +273,20 @@ ul {
   width: 352px;
   border: 2px solid var(--color-light);
   content: ''; /* обов"язковий елемент для декору */
+}
+
+.chef-card{
+  display: flex;
+  gap: 30px;
+}
+
+.chefs-list{
+  display: flex;
+  gap: 30px;
+}
+
+.chefs-item{
+  flex-basis: calc((100% - 30px) / 2);
 }
 
 .chefs-title {
@@ -322,7 +340,7 @@ ul {
 }
 
 /* Carousel */
-.carousel-button{
+.carousel-button {
   padding: 0;
   display: flex;
   align-items: center;
@@ -331,17 +349,15 @@ ul {
   height: 44px;
   background-color: transparent;
   border-radius: 50%;
-  border: 1px solid var(--primary-dark) ;
+  border: 1px solid var(--primary-dark);
   cursor: pointer;
   fill: var(--primary-dark);
 }
 
-.carousel-button:hover{
-background-color: var(--primary-dark);
-fill: var(--color-light);
+.carousel-button:hover {
+  background-color: var(--primary-dark);
+  fill: var(--color-light);
 }
-
-
 
 /* Contacts section */
 .contact-title {
@@ -360,11 +376,11 @@ fill: var(--color-light);
   color: var(--color-brand-light);
 }
 
-.adress-icon{
+.adress-icon {
   fill: var(--primary-normal); /* колір іконок задвється через fill */
 }
 
-.adress-icon:hover{
+.adress-icon:hover {
   fill: var(--color-brand-light); /* колір іконок задвється через fill */
 }
 
