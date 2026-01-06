@@ -367,8 +367,20 @@ ul {
 }
 
 /* Contacts section */
+.contacts-section{
+  padding-bottom: 96px;
+}
 .contact-title {
   margin-bottom: 16px;
+}
+
+.contact-container{
+  display: flex;
+  gap: 32px;
+}
+.contact-map{
+  flex-shrink: 0;
+  border-radius: 16px;
 }
 
 /* Footer */
