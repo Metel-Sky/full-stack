@@ -50,7 +50,9 @@
 
 /* Base */
 
-* {
+*,
+::before,
+::after {
   box-sizing: border-box; /* щоб padding і border не збільшували розмір елемента */
 }
 
@@ -72,6 +74,10 @@ h5,
 h6,
 p {
   margin-top: 0; /* прибирає стандартні відступи браузера */
+}
+
+a {
+  display: inline-block;
 }
 
 .container {
@@ -275,17 +281,17 @@ ul {
   content: ''; /* обов"язковий елемент для декору */
 }
 
-.chef-card{
+.chef-card {
   display: flex;
   gap: 30px;
 }
 
-.chefs-list{
+.chefs-list {
   display: flex;
   gap: 30px;
 }
 
-.chefs-item{
+.chefs-item {
   flex-basis: calc((100% - 30px) / 2);
 }
 
@@ -296,7 +302,7 @@ ul {
 
 /* Formats section */
 
-.formats-container{
+.formats-container {
   display: flex;
   gap: 32px;
   align-items: center;
@@ -367,23 +373,49 @@ ul {
 }
 
 /* Contacts section */
-.contacts-section{
+.contacts-section {
   padding-bottom: 96px;
 }
 .contact-title {
   margin-bottom: 16px;
 }
 
-.contact-container{
+.contact-container {
   display: flex;
   gap: 32px;
 }
-.contact-map{
+.contact-map {
   flex-shrink: 0;
   border-radius: 16px;
 }
 
 /* Footer */
+footer {
+  padding: 32px 0;
+}
+
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav,
+.footer-address {
+  display: flex;
+  gap: 20px;
+  flex-basis: 50%;
+}
+
+.footer-logo,
+.footer-menu {
+  flex-grow: 1;
+}
+
+.address-list,
+.address-info {
+  flex-grow: 1;
+}
+
 .adress-link {
   color: var(--primary-normal);
   font-weight: 400;
