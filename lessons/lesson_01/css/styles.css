@@ -51,8 +51,8 @@
 /* Base */
 
 *,
-::before,
-::after {
+*::before,
+*::after {
   box-sizing: border-box; /* щоб padding і border не збільшували розмір елемента */
 }
 
@@ -261,6 +261,14 @@ ul {
 
 /* Chefs section */
 
+.chef-text p {
+  margin-bottom: 24px;
+}
+
+.chef-text p:last-child {
+  margin-bottom: 0px;
+}
+
 .chef-title {
   font-size: 40px;
   font-weight: 600;
@@ -288,7 +296,8 @@ ul {
 
 .chefs-list {
   display: flex;
-  gap: 30px;
+  gap: 40px 30px;
+  flex-wrap: wrap;
 }
 
 .chefs-item {

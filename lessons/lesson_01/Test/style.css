@@ -2,18 +2,36 @@
     box-sizing: border-box;
 }
 
-.flex-container {
+/* 
+    .flex-container {
     display: flex;
-    justify-content: center;/* вирівнює елементи по горизонталі по центру */
-} 
+    justify-content: center;
+    }
+    вирівнює елементи по горизонталі по центру 
+*/
 
-.item{
-    flex-basis: 100px;
+.perent{
+
+}
+
+.item.red{
+    width: 100px;
     height: 100px;
-    background-color: blanchedalmond;
-    padding: 10px;
-    border: 6px solid coral;
-    margin: 10px;
+    background-color: red;
+    
+}
+.item.green{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    
+}
+
+.item.blue{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    
 }
 
 .item:nth-child(2){
